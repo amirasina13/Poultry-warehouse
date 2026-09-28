@@ -1,0 +1,688 @@
+[
+    {
+        "version": "2.2.6+26",
+        "features": {
+            "en": [
+                "Standardized 'Status' values to align with the portal.",
+                "Fixed total summary view issue in the Picking List page.",
+                "Added item numbering/index column to all lists."
+            ],
+            "ms": [
+                "Nilai 'Status' yang diseragamkan agar sejajar dengan portal.",
+                "Membetulkan isu paparan ringkasan keseluruhan dalam halaman Senarai Pemilihan.",
+                "Menambah lajur penomboran/indeks item pada semua senarai."
+            ]
+        }
+    },
+    {
+        "version": "2.2.5+25",
+        "features": {
+            "en": [
+                "Reorganized the 'Picking List' and 'Reason Code' fields below 'Type of Transaction' for more consistent form flow.",
+                "Disabled From/To Area input upon selecting a Picking List or 'Document No'",
+                "Updated Picking List and GIN Document API integrations."
+            ],
+            "ms": [
+                "Menyusun semula medan 'Senarai Pemilihan' dan 'Kod Sebab' di bawah 'Jenis Transaksi' untuk aliran borang yang lebih konsisten.",
+                "Input Dari/Ke Kawasan dilumpuhkan semasa memilih 'Senarai Pemilihan' atau 'No. Dokumen'",
+                "Senarai Pemilihan dan penyepaduan API Dokumen GIN yang dikemas kini."
+            ]
+        }
+    },
+    {
+        "version": "2.2.4+24",
+        "features": {
+            "en": [
+                "Fix 'Available Stock' title view clipping issue",
+                "Standardize manage task popup",
+                "Standardize the arrangement of tray dropdown",
+                "Standardize the sku dropdown",
+                "Update all 'KG' text in capital letters"
+            ],
+            "ms": [
+                "Betulkan isu keratan paparan tajuk 'Stok Tersedia'",
+                "Seragamkan tetingkap timbul urus tugas",
+                "Seragamkan susunan lungsur turun dulang",
+                "Seragamkan lungsur turun sku",
+                "Kemas kini semua teks 'KG' dalam huruf besar"
+            ]
+        }
+    },
+    {
+        "version": "2.2.3+23",
+        "features": {
+            "en": [
+                "Disable Type of Transaction editing for users.",
+                "Sorted items in dropdown menu list."
+            ],
+            "ms": [
+                "Lumpuhkan pengeditan Jenis Transaksi untuk pengguna.",
+                "Item disusun dalam senarai menu lungsur turun."
+            ]
+        }
+    },
+    {
+        "version": "2.2.2+22",
+        "features": {
+            "en": [
+                "Added filter picking list to API",
+                "Fixed sku dropdown search function ",
+                "Changed 'Available Stock' title",
+                "Set default tray count to 1 for items from picking list"
+            ],
+            "ms": [
+                "Menambah senarai pemilihan penapis pada API",
+                "Membetulkan fungsi carian lungsur turun SKU",
+                "Menukar tajuk 'Stok Tersedia'",
+                "Tetapkan kiraan tray kepada 1 untuk item daripada senarai pemilihan"
+            ]
+        }
+    },
+    {
+        "version": "2.2.1+21",
+        "features": {
+            "en": [
+                "Added Quantity UOM to the Add Item page",
+                "Set the default No. of Tray to 1",
+                "Fixed mandatory Reason Code validation in GIN and GRN"
+            ],
+            "ms": [
+                "Menambah Kuantiti UOM pada halaman Tambah Item",
+                "Tetapkan Bilangan Dulang kepada 1",
+                "Membetulkan pengesahan Kod Sebab mandatori dalam GIN dan GRN"
+            ]
+        }
+    },
+    {
+        "version": "2.2.0+20",
+        "features": {
+            "en": [
+                "Production Batch No. will be group in app",
+                "Fixing edited item data"
+            ],
+            "ms": [
+                "roduction Batch No. akan dikumpulkan dalam aplikasi",
+                "Membetulkan data item yang diedit"
+            ]
+        }
+    },
+    {
+        "version": "2.1.9+19",
+        "features": {
+            "en": [
+                "Fix: Handle missing remarks parameter in create transaction API",
+                "Fix: Fix restore behavior for deleted GIN picking lists",
+                "Fix: Checking available quantity and weight against picking list and stock balance"
+            ],
+            "ms": [
+                "Pembetulan: Kendalikan parameter komen yang hilang dalam API cipta transaksi",
+                "Pembetulan: Betulkan pemulihan untuk senarai pemilihan GIN yang dipadam",
+                "Pembetulan: Semak kuantiti dan berat yang tersedia terhadap senarai pemilihan dan baki stok"
+            ]
+        }
+    },
+    {
+        "version": "2.1.8+18",
+        "features": {
+            "en": [
+                "Update GIN SKU area selection parameter "
+            ],
+            "ms": [
+                "Betulkan parameter pemilihan kawasan SKU GIN"
+            ]
+        }
+    },
+    {
+        "version": "2.1.7+17",
+        "features": {
+            "en": [
+                "Update Environment"
+            ],
+            "ms": [
+                "Kemaskini environment"
+            ]
+        }
+    },
+    {
+        "version": "2.1.6+16",
+        "features": {
+            "en": [
+                "Standardize date field only show date.",
+                "Fixing available quantity and weight(api issue)"
+            ],
+            "ms": [
+                "Piawaikan medan tarikh hanya tunjukkan tarikh.",
+                "Betulkan kuantiti dan berat tersedia(isu api)"
+            ]
+        }
+    },
+    {
+        "version": "2.1.5+15",
+        "features": {
+            "en": [
+                "Fixing GIN SKU selection grey screen issue"
+            ],
+            "ms": [
+                "Betulkan isu skrin kelabu semasa pemilihan SKU GIN"
+            ]
+        }
+    },
+    {
+        "version": "2.1.3+13",
+        "features": {
+            "en": [
+                "Standardize all SKU names and codes: Inventory name/ sku code",
+                "Fixing bugs"
+            ],
+            "ms": [
+                "Seragamkan semua nama dan kod SKU: Nama inventori/ kod sku",
+                "Membetulkan pepijat"
+            ]
+        }
+    },
+    {
+        "version": "2.1.2+12",
+        "features": {
+            "en": [
+                "Standardize all SKU names and codes",
+                "Fixing bugs"
+            ],
+            "ms": [
+                "Seragamkan semua nama dan kod SKU",
+                "Membetulkan pepijat"
+            ]
+        }
+    },
+    {
+        "version": "2.1.1+11",
+        "features": {
+            "en": [
+                "Standardize all SKU names and codes",
+                "Include the app version number in the request header for all API calls"
+            ],
+            "ms": [
+                "Seragamkan semua nama dan kod SKU",
+                "Sertakan nombor versi aplikasi dalam pengepala permintaan untuk semua panggilan API"
+            ]
+        }
+    },
+    {
+        "version": "2.1.0+10",
+        "features": {
+            "en": [
+                "Fixed duplicate sku after create job"
+            ],
+            "ms": [
+                "Memperbaiki isu sku berganda selepas mencipta kerja"
+            ]
+        }
+    },
+    {
+        "version": "2.0.0+10",
+        "features": {
+            "en": [
+                "Fixed an issue where the ‘From Area’ field showed the wrong area when a picking list was selected"
+            ],
+            "ms": [
+                "Memperbaiki masalah di mana ‘Dari Kawasan’ menunjukkan kawasan yang salah apabila senarai pilihan dipilih"
+            ]
+        }
+    },
+    {
+        "version": "2.0.0+9",
+        "features": {
+            "en": [
+                "Corrected available quantity and weight on the picking list.",
+                "Disabled category validation when editing an SKU from the picking list.",
+                "Prevented zero tray quantity when a tray is selected.",
+                "Fixed issue where the 'Remark' field failed to update in the portal.",
+                "Removed 'Remark' field from the 'Add Item' page."
+            ],
+            "ms": [
+                "Membetulkan kuantiti dan berat yang tersedia pada senarai pemilihan.",
+                "Pengesahan kategori dinyahdayakan semasa mengedit SKU daripada senarai pemilihan.",
+                "Menghalang kuantiti tray sifar apabila tray dipilih.",
+                "Membetulkan isu di mana 'Catatan' gagal dikemas kini dalam portal.",
+                "Membuang 'Catatan' daripada halaman 'Tambah Item'."
+            ]
+        }
+    },
+    {
+        "version": "2.0.0+8",
+        "features": {
+            "en": [
+                "Fixed reason_id not sending to the API",
+                "Fixed the Production Batch No. filtering by area",
+                "Fixed typos in UI text",
+                "Standardized layout alignment issues"
+            ],
+            "ms": [
+                "Memperbaiki reason_id yang tidak dihantar ke API",
+                "Memperbaiki penapisan No. Kelompok Pengeluaran mengikut kawasan",
+                "Memperbaiki kesalahan taip dalam teks UI",
+                "Isu penjajaran susun atur piawai"
+            ]
+        }
+    },
+    {
+        "version": "2.0.0+7",
+        "features": {
+            "en": [
+                "Added the app name to the login page,",
+                "Added a 'None' option for the trolley",
+                "Fixed the 'GIN Doc No' list",
+                "Fixed saving the SKU list in the database"
+            ],
+            "ms": [
+                "Menambah nama aplikasi pada halaman log masuk",
+                "Menambah pilihan 'Tiada' untuk troli",
+                "Membetulkan senarai 'No. Dokumen GIN'",
+                "Membetulkan penyimpanan senarai SKU dalam pangkalan data"
+            ]
+        }
+    },
+    {
+        "version": "2.0.0+6",
+        "features": {
+            "en": [
+                "Fixed log version issue did not display."
+            ],
+            "ms": [
+                "Isu pembetulan versi log tidak dipaparkan."
+            ]
+        }
+    },
+    {
+        "version": "2.0.0+5",
+        "features": {
+            "en": [
+                "Updated GIN/GRN doc title"
+            ],
+            "ms": [
+                "Tajuk dokumen GIN/GRN yang dikemas kini"
+            ]
+        }
+    },
+    {
+        "version": "2.0.0+4",
+        "features": {
+            "en": [
+                "Fixed GRN Purchase Vendor needs to be mandatorys",
+                "Get tray and trolley info from API",
+                "Add Reason Code if type of transaction selection is 'Return to Supplier' and 'Return by Customer'"
+            ],
+            "ms": [
+                "Membetulkan Pembelian GRN Vendor perlu menjadi mandatori",
+                "Dapatkan maklumat dulang dan troli daripada API",
+                "Tambah Kod Sebab jika jenis pilihan transaksi ialah 'Pulangan kepada Pembekal' dan 'Pulangan oleh Pelanggan'"
+            ]
+        }
+    },
+    {
+        "version": "2.0.0+3",
+        "features": {
+            "en": [
+                "Fixed location issue after selected location."
+            ],
+            "ms": [
+                "Memperbaiki isu lokasi selepas lokasi yang dipilih."
+            ]
+        }
+    },
+    {
+        "version": "2.0.0+2",
+        "features": {
+            "en": [
+                "Change flow of creating GIN/GRN Transaction No. Will generate after click continue."
+            ],
+            "ms": [
+                "Perubahan aliran penciptaan No. Transaksi GIN/GRN Akan dijana selepas klik teruskan."
+            ]
+        }
+    },
+    {
+        "version": "2.0.0",
+        "features": {
+            "en": [
+                "New updated UI/UX"
+            ],
+            "ms": [
+                "UI/UX baharu yang dikemas kini"
+            ]
+        }
+    },
+    {
+        "version": "1.0.18",
+        "features": {
+            "en": [
+                "Adjust and fix new error message from API"
+            ],
+            "ms": [
+                "Laraskan dan baiki mesej ralat baharu daripada API"
+            ]
+        }
+    },
+    {
+        "version": "1.0.17",
+        "features": {
+            "en": [
+                "Adjust more error message from API"
+            ],
+            "ms": [
+                "Laraskan lagi mesej ralat daripada API"
+            ]
+        }
+    },
+    {
+        "version": "1.0.16",
+        "features": {
+            "en": [
+                "Adjust error message from API"
+            ],
+            "ms": [
+                "Laraskan mesej ralat daripada API"
+            ]
+        }
+    },
+    {
+        "version": "1.0.15",
+        "features": {
+            "en": [
+                "Clean and remove temp data",
+                "Adjust checking for batch number. Now using stock balance id instead of batch number"
+            ],
+            "ms": [
+                "Bersihkan dan buang data sementara",
+                "Laraskan semakan untuk nombor batch. Kini menggunakan id baki stok dan bukannya nombor batch"
+            ]
+        }
+    },
+    {
+        "version": "1.0.14",
+        "features": {
+            "en": [
+                "Update apk, clean and recreate"
+            ],
+            "ms": [
+                "Kemas kini apk, bersihkan dan cipta semula"
+            ]
+        }
+    },
+    {
+        "version": "1.0.13",
+        "features": {
+            "en": [
+                "Update apk, clean and recreate"
+            ],
+            "ms": [
+                "Kemas kini apk, bersihkan dan cipta semula"
+            ]
+        }
+    },
+    {
+        "version": "1.0.12",
+        "features": {
+            "en": [
+                "Bug fix"
+            ],
+            "ms": [
+                "Pembaikan pepijat"
+            ]
+        }
+    },
+    {
+        "version": "1.0.11",
+        "features": {
+            "en": [
+                "Adjust GIN and GRN display layout",
+                "Fix issue where stock balance not calculate correctly when upload from app"
+            ],
+            "ms": [
+                "Laraskan susun atur paparan GIN dan GRN",
+                "Baiki isu baki stok tidak dikira dengan betul apabila dimuat naik dari aplikasi"
+            ]
+        }
+    },
+    {
+        "version": "1.0.10",
+        "features": {
+            "en": [
+                "Fix GIN loading issue if no picking list selected"
+            ],
+            "ms": [
+                "Baiki isu pemuatan GIN jika tiada senarai picking dipilih"
+            ]
+        }
+    },
+    {
+        "version": "1.0.9",
+        "features": {
+            "en": [
+                "Adjust bluetooth display at sku page. Remove link format and display only text and icon"
+            ],
+            "ms": [
+                "Laraskan paparan bluetooth di halaman SKU. Buang format pautan dan paparkan hanya teks dan ikon"
+            ]
+        }
+    },
+    {
+        "version": "1.0.8",
+        "features": {
+            "en": [
+                "Added bluetooth global. Connect bluetooth at home page",
+                "Fix UI for GRN and GIN view table",
+                "Add loading screen when loading item from API on GIN and GRN table view"
+            ],
+            "ms": [
+                "Tambah bluetooth global. Sambung bluetooth di halaman utama",
+                "Baiki UI untuk paparan jadual GRN dan GIN",
+                "Tambah skrin pemuatan semasa memuatkan item dari API pada paparan jadual GIN dan GRN"
+            ]
+        }
+    },
+    {
+        "version": "1.0.7",
+        "features": {
+            "en": [
+                "Check on Bluetooth connection page",
+                "Update time interval when to stop bluetooth scan",
+                "Set quantity & weight default to 0 if there is control"
+            ],
+            "ms": [
+                "Semak pada halaman sambungan Bluetooth",
+                "Kemas kini selang masa bila untuk hentikan imbasan bluetooth",
+                "Tetapkan kuantiti & berat kepada 0 jika terdapat kawalan"
+            ]
+        }
+    },
+    {
+        "version": "1.0.6",
+        "features": {
+            "en": [
+                "Change popup font size and color",
+                "Change display name from username to name",
+                "Fix the duplicate button and refresh icon at home page"
+            ],
+            "ms": [
+                "Tukar saiz dan warna fon popup",
+                "Tukar paparan nama daripada nama pengguna kepada nama",
+                "Baiki butang berganda dan ikon segar semula di halaman utama"
+            ]
+        }
+    },
+    {
+        "version": "1.0.5",
+        "features": {
+            "en": [
+                "Fix issue where GIN doc number upload not sending to API"
+            ],
+            "ms": [
+                "Baiki isu nombor dokumen GIN tidak dihantar ke API"
+            ]
+        }
+    },
+    {
+        "version": "1.0.4",
+        "features": {
+            "en": [
+                "Fix issue Transfer delete when change location"
+            ],
+            "ms": [
+                "Baiki isu pindahan dipadam apabila tukar lokasi"
+            ]
+        }
+    },
+    {
+        "version": "1.0.3",
+        "features": {
+            "en": [
+                "Fix issue screen going black when going back from Bluetooth page"
+            ],
+            "ms": [
+                "Baiki isu skrin jadi hitam apabila kembali dari halaman Bluetooth"
+            ]
+        }
+    },
+    {
+        "version": "1.0.2",
+        "features": {
+            "en": [
+                "Fix picking issue not displaying if there is no picking list"
+            ],
+            "ms": [
+                "Baiki isu picking tidak dipaparkan jika tiada senarai picking"
+            ]
+        }
+    },
+    {
+        "version": "1.0.1",
+        "features": {
+            "en": [
+                "Improve performance",
+                "Add status for view picking list sku"
+            ],
+            "ms": [
+                "Tingkatkan prestasi",
+                "Tambah status untuk lihat SKU senarai picking"
+            ]
+        }
+    },
+    {
+        "version": "1.0.0",
+        "features": {
+            "en": [
+                "Update logo icon",
+                "Added Malay language",
+                "Remove Temp data"
+            ],
+            "ms": [
+                "Kemas kini ikon logo",
+                "Tambah bahasa Melayu",
+                "Buang data sementara"
+            ]
+        }
+    },
+    {
+        "version": "0.9.9",
+        "features": {
+            "en": [
+                "Fix missing UOM when view picking list",
+                "Fix calculation checking issue regarding over weight limit"
+            ],
+            "ms": [
+                "Baiki isu UOM hilang semasa melihat senarai picking",
+                "Baiki isu pengiraan berkaitan had berat berlebihan"
+            ]
+        }
+    },
+    {
+        "version": "0.9.8",
+        "features": {
+            "en": [
+                "Fix Trolley/Tray weight calculation"
+            ],
+            "ms": [
+                "Baiki pengiraan berat Troli/Dulang"
+            ]
+        }
+    },
+    {
+        "version": "0.9.7",
+        "features": {
+            "en": [
+                "Added Scan SKU option",
+                "Change naming for Trolley Weight (Small, Medium, Large, Special)"
+            ],
+            "ms": [
+                "Tambah pilihan Imbas SKU",
+                "Tukar nama untuk Berat Troli (Kecil, Sederhana, Besar, Khas)"
+            ]
+        }
+    },
+    {
+        "version": "0.9.6",
+        "features": {
+            "en": [
+                "Bug fixes"
+            ],
+            "ms": [
+                "Pembetulan Isu"
+            ]
+        }
+    },
+    {
+        "version": "0.9.5",
+        "features": {
+            "en": [
+                "Bug fixes"
+            ],
+            "ms": [
+                "Pembetulan Isu"
+            ]
+        }
+    },
+    {
+        "version": "0.9.4",
+        "features": {
+            "en": [
+                "Bug fixes"
+            ],
+            "ms": [
+                "Pembetulan Isu"
+            ]
+        }
+    },
+    {
+        "version": "0.9.3",
+        "features": {
+            "en": [
+                "Bug fixes"
+            ],
+            "ms": [
+                "Pembetulan Isu"
+            ]
+        }
+    },
+    {
+        "version": "0.9.2",
+        "features": {
+            "en": [
+                "Bug fixes"
+            ],
+            "ms": [
+                "Pembetulan Isu"
+            ]
+        }
+    },
+    {
+        "version": "0.9.1",
+        "features": {
+            "en": [
+                "Bug fixes"
+            ],
+            "ms": [
+                "Pembetulan Isu"
+            ]
+        }
+    }
+]

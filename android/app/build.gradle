@@ -1,0 +1,178 @@
+plugins {
+    id "com.android.application"
+    // START: FlutterFire Configuration
+    id 'com.google.gms.google-services'
+    // END: FlutterFire Configuration
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file("key.properties")
+
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '2'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+
+android {
+    namespace "com.iqsb.warehouse"
+    compileSdkVersion 34
+    ndkVersion flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        // applicationId "com.wsi.warehouse"
+        // You can update the following values to match your application needs.
+        // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
+        minSdkVersion 23
+        targetSdkVersion 34
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.release
+        }
+    }
+
+    flavorDimensions "brand"
+    productFlavors {
+        // --- INTERNAL / DEFAULT ---
+        internal {
+            dimension "brand"
+            applicationId "com.iqsb.warehouse" // Your base package name
+            buildConfigField "String", "FLAVOR_environment", '"internal"'
+            resValue "string", "app_name", "IQ INTERNAL WAREHOUSE" 
+            manifestPlaceholders = [appName: "IQ INTERNAL WAREHOUSE"]
+        }
+        farUat {
+            dimension "brand"
+            applicationId "com.iqsb.warehouse_uat" // Your base package name
+            buildConfigField "String", "FLAVOR_environment", '"farUat"'
+            resValue "string", "app_name", "IQ UAT WAREHOUSE" 
+            manifestPlaceholders = [appName: "IQ UAT WAREHOUSE"]
+        }
+
+        // --- Farmiera---
+        farStaging {
+            dimension "brand"
+            applicationId "com.farmiera.fstaging_farmiera_warehouse"
+            buildConfigField "String", "FLAVOR_environment", '"farStaging"'
+            resValue "string", "app_name", "FAR UAT WAREHOUSE" 
+            manifestPlaceholders = [appName: "FAR UAT WAREHOUSE"]
+        }
+        farProd {
+            dimension "brand"
+            applicationId "com.farmiera.live_farmiera_warehouse"
+            buildConfigField "String", "FLAVOR_environment", '"farProd"'
+            resValue "string", "app_name", "FAR LIVE WAREHOUSE" 
+            manifestPlaceholders = [appName: "FAR LIVE WAREHOUSE"]
+        }
+
+        // --- WSI ---
+        wsiStaging {
+            dimension "brand"
+            applicationId "com.wsi.warehouse.staging"
+            buildConfigField "String", "FLAVOR_environment", '"wsiStaging"'
+            resValue "string", "app_name", "WSI UAT WAREHOUSE" 
+            manifestPlaceholders = [appName: "WSI UAT WAREHOUSE"]
+        }
+        wsiProd {
+            dimension "brand"
+            applicationId "com.wsi.warehouse.production"
+            buildConfigField "String", "FLAVOR_environment", '"wsiProd"'
+            resValue "string", "app_name", "WSI LIVE WAREHOUSE" 
+            manifestPlaceholders = [appName: "WSI LIVE WAREHOUSE"]
+        }
+    }
+
+    sourceSets {
+        farStaging {
+            manifest.srcFile 'src/far/AndroidManifest.xml'
+            res.srcDirs = ['src/far/res']
+        }
+        farProd {
+            manifest.srcFile 'src/far/AndroidManifest.xml'
+            res.srcDirs = ['src/far/res']
+        }
+        wsiStaging {
+            manifest.srcFile 'src/wsi/AndroidManifest.xml'
+            res.srcDirs = ['src/wsi/res']
+        }
+        wsiProd {
+            manifest.srcFile 'src/wsi/AndroidManifest.xml'
+            res.srcDirs = ['src/wsi/res']
+        }
+    }
+}
+
+googleServices {
+    // If the package name isn't in the JSON, or the JSON is missing, don't fail the build
+    missingGoogleServicesStrategy = "IGNORE"
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:34.7.0')
+}
+
+// Forcefully disable the Firebase check for Farmiera flavors
+// android.applicationVariants.all { variant ->
+//     if (variant.flavorName.contains("far")) {
+//         def googleTask = tasks.findByName("process${variant.name.capitalize()}GoogleServices")
+//         if (googleTask) {
+//             googleTask.enabled = false
+//             println "Skipping Google Services for flavor: ${variant.name}"
+//         }
+//     }
+// }

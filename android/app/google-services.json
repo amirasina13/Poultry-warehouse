@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "492875434884",
+    "project_id": "internal-poultry",
+    "storage_bucket": "internal-poultry.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492875434884:android:bba564944ebf18d1cc6bd1",
+        "android_client_info": {
+          "package_name": "com.iqsb.warehouse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK6SmWsIz16DOl5cBIauLnolzCwB9Xuw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492875434884:android:1f6df40e4b41df9ecc6bd1",
+        "android_client_info": {
+          "package_name": "com.iqsb.warehouse_uat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK6SmWsIz16DOl5cBIauLnolzCwB9Xuw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="recordsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6C7A89;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5A6C7D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle fill="#F5F7FA" cx="128" cy="128" r="120"/>
+  
+  <!-- Multiple stacked documents effect -->
+  
+  <!-- Document 3 (back) - shadow -->
+  <rect fill="#D1D8E0" opacity="0.3" x="85" y="52" width="95" height="130" rx="7" transform="translate(3, 3)"/>
+  <rect fill="#D1D8E0" x="85" y="52" width="95" height="130" rx="7"/>
+  
+  <!-- Document 2 (middle) -->
+  <rect fill="#D1D8E0" opacity="0.4" x="78" y="58" width="100" height="135" rx="7" transform="translate(2, 2)"/>
+  <rect fill="#D1D8E0" x="78" y="58" width="100" height="135" rx="7"/>
+  
+  <!-- Document 1 (front) - main document -->
+  <rect fill="#D1D8E0" opacity="0.3" x="70" y="64" width="110" height="140" rx="8" transform="translate(2, 2)"/>
+  <rect fill="#D1D8E0" x="70" y="64" width="110" height="140" rx="8"/>
+  <rect fill="#FFFFFF" x="75" y="69" width="100" height="130" rx="6"/>
+  
+  <!-- Header bar -->
+  <rect fill="url(#recordsGrad)" x="82" y="76" width="86" height="18" rx="4"/>
+  
+  <!-- Document lines representing records -->
+  <g>
+    <rect fill="#D1D8E0" x="87" y="104" width="76" height="5" rx="2.5"/>
+    <rect fill="#D1D8E0" x="87" y="115" width="68" height="5" rx="2.5"/>
+    
+    <rect fill="#D1D8E0" x="87" y="130" width="76" height="5" rx="2.5"/>
+    <rect fill="#D1D8E0" x="87" y="141" width="72" height="5" rx="2.5"/>
+    
+    <rect fill="#D1D8E0" x="87" y="156" width="76" height="5" rx="2.5"/>
+    <rect fill="#D1D8E0" x="87" y="167" width="70" height="5" rx="2.5"/>
+    
+    <rect fill="#D1D8E0" x="87" y="182" width="76" height="5" rx="2.5"/>
+  </g>
+  
+  <!-- Filing cabinet/folder icon in corner -->
+  <g transform="translate(155, 175)">
+    <rect fill="url(#recordsGrad)" x="0" y="0" width="20" height="18" rx="2"/>
+    <path fill="url(#recordsGrad)" d="M 2,0 L 6,0 L 8,-4 L 12,-4 L 14,0 L 18,0" opacity="0.8"/>
+    <rect fill="#FFFFFF" x="5" y="6" width="10" height="2" rx="1"/>
+  </g>
+  
+  <!-- Document count indicator -->
+  <circle fill="url(#recordsGrad)" cx="90" cy="83" r="8"/>
+  <text x="90" y="87" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">3</text>
+</svg>

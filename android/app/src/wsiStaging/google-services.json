@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "870679837860",
+    "project_id": "wsi-poultry",
+    "storage_bucket": "wsi-poultry.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870679837860:android:436cba891a00d4aa11fa31",
+        "android_client_info": {
+          "package_name": "com.wsi.production.production"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxPz2C24QmqB2xrVi2aD-eODOxEC8Sxu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870679837860:android:ce04faa74e76e5e011fa31",
+        "android_client_info": {
+          "package_name": "com.wsi.production.staging"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxPz2C24QmqB2xrVi2aD-eODOxEC8Sxu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870679837860:android:2267dab2a49af9d011fa31",
+        "android_client_info": {
+          "package_name": "com.wsi.warehouse.internal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxPz2C24QmqB2xrVi2aD-eODOxEC8Sxu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870679837860:android:7c5bbb7096fbcedd11fa31",
+        "android_client_info": {
+          "package_name": "com.wsi.warehouse.production"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxPz2C24QmqB2xrVi2aD-eODOxEC8Sxu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870679837860:android:36d42c33c3f52ce411fa31",
+        "android_client_info": {
+          "package_name": "com.wsi.warehouse.staging"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxPz2C24QmqB2xrVi2aD-eODOxEC8Sxu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

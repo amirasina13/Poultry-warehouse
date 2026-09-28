@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="pinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6C7A89;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5A6C7D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle fill="#F5F7FA" cx="128" cy="128" r="120"/>
+  
+  <!-- Map pin outer shadow -->
+  <path fill="#D1D8E0" opacity="0.3" d="M 128,38 Q 88,38 88,88 Q 88,128 128,198 Q 168,128 168,88 Q 168,38 128,38 Z" transform="translate(2, 2)"/>
+  
+  <!-- Map pin outer -->
+  <path fill="#d1d8e0" d="M 128,38 Q 88,38 88,88 Q 88,128 128,198 Q 168,128 168,88 Q 168,38 128,38 Z"/>
+  
+  <!-- Map pin inner with gradient -->
+  <path fill="url(#pinGrad)" d="M 128,45 Q 95,45 95,88 Q 95,122 128,185 Q 161,122 161,88 Q 161,45 128,45 Z"/>
+  
+  <!-- Inner circle for icon -->
+  <circle fill="#FFFFFF" cx="128" cy="88" r="35"/>
+  <circle fill="#d1d8e0" cx="128" cy="88" r="32"/>
+  
+  <!-- Modern farm/barn building -->
+  <!-- Roof - sleek triangle -->
+  <path fill="url(#pinGrad)" d="M 110,78 L 128,65 L 146,78 Z"/>
+  
+  <!-- Building body -->
+  <rect fill="url(#pinGrad)" x="113" y="78" width="30" height="24" rx="2"/>
+  
+  <!-- Door -->
+  <rect fill="#FFFFFF" x="121" y="87" width="14" height="15" rx="1"/>
+  
+  <!-- Windows - modern squares -->
+  <rect fill="#d1d8e0" x="116" y="82" width="6" height="5" rx="1"/>
+  <rect fill="#d1d8e0" x="134" y="82" width="6" height="5" rx="1"/>
+  
+  <!-- Silo - modern cylindrical -->
+  <rect fill="#d1d8e0" x="144" y="72" width="8" height="18" rx="4"/>
+  <ellipse fill="url(#pinGrad)" cx="148" cy="72" rx="4" ry="2"/>
+  
+  <!-- Ground line -->
+  <ellipse fill="#d1d8e0" cx="128" cy="105" rx="25" ry="4"/>
+  
+  <!-- Bottom shadow -->
+  <ellipse fill="#5A6C7D" cx="128" cy="198" rx="18" ry="6" opacity="0.2"/>
+</svg>

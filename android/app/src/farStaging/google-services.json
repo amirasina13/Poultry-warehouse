@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "370690415549",
+    "project_id": "far-poultry-709d0",
+    "storage_bucket": "far-poultry-709d0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370690415549:android:f0a260c76f40a3a7e8d0d4",
+        "android_client_info": {
+          "package_name": "com.farmiera.fstaging_farmiera_warehouse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK8hqcTRwnfNxb0PmMov7pKCkIwrshF_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370690415549:android:5362e0f30b341422e8d0d4",
+        "android_client_info": {
+          "package_name": "com.farmiera.live_farmiera_warehouse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK8hqcTRwnfNxb0PmMov7pKCkIwrshF_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
